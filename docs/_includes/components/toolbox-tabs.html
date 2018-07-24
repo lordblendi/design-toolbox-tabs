@@ -1,0 +1,18 @@
+{% comment %} selectedIndex can be one single ingeter starting from 1 in string {% endcomment %}
+{% comment %} default value is 1 {% endcomment %}
+{% assign selectedIndex = "1"  %}
+{% if include.selectedIndex %}
+  {% assign selectedIndex = include.selectedIndex  %}
+{% endif %}
+
+
+{% assign invert = ""  %}
+{% if include.invert %}
+  {% assign invert = "toolbox-tabs--invert"  %}
+{% endif %}
+
+<div class="toolbox-tabs {{invert}}">
+  {% include components/toolbox-tabs-nav.html data=include.tabsNavData %}
+
+  {% include components/toolbox-tabs-panels.html data=include.panelData %}
+</div>

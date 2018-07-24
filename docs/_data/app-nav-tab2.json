@@ -1,0 +1,109 @@
+{
+  "groups": [{
+      "name": " My private overviews",
+      "loadmore": "false",
+      "counter":"",
+      "items": [
+        {
+          "label": "PRODUCT DEVELOPMENT TESTING A VERY LONG LABEL TO SEE IF ELLIPSIS EVENTUALY WILL WORK",
+          "name": "BI Bugs Stats",
+          "prefix": ""
+        },
+        {
+          "label": "PRODUCT DEVELOPMENT",
+          "name": "BI product sprints",
+          "prefix": ""
+        },
+        {
+          "label": "PRODUCT DEVELOPMENT",
+          "name": "BI strategic goals",
+          "prefix": ""
+        },
+        {
+          "label": "PRODUCT DEVELOPMENT",
+          "name": "bugs created last month",
+          "prefix": ""
+        },
+        {
+          "label": "PRODUCT DEVELOPMENT",
+          "name": "Closed Last month with rootcause",
+          "prefix": ""
+        },
+        {
+          "label": "PRODUCT DEVELOPMENT",
+          "name": "Milestone Spaghetti by WorkType",
+          "prefix": ""
+        }
+      ]
+    },
+    {
+      "name": " My shared overviews",
+      "loadmore": "true",
+      "counter":"1k+",
+      "items": [
+        {
+          "label": "PRODUCT DEVELOPMENT",
+          "name": "DEVCENTER_Cooking",
+          "prefix": ""
+        },
+        {
+          "label": "PRODUCT DEVELOPMENT",
+          "name": "DEVCENTER_Served",
+          "prefix": ""
+        },
+        {
+          "label": "PMX PROJECTS AND SUPPORT",
+          "name": "All remaining projects & SRs (MSProject)",
+          "prefix": ""
+        },
+        {
+          "label": "PMX PROJECTS AND SUPPORT",
+          "name": "Budget Overrun Projects And Services",
+          "prefix": ""
+        },
+        {
+          "label": "PRODUCT DEVELOPMENT",
+          "name": "Backlog Health",
+          "prefix": ""
+        }
+      ]
+    },
+    {
+      "name": " Overviews shared with me",
+      "loadmore": "false",
+      "counter":"",
+      "items": [
+        {
+          "label": "OPERATIONS",
+          "name": "IT Requests",
+          "prefix": ""
+        },
+        {
+          "label": "OPERATIONS",
+          "name": "IT Tasks",
+          "prefix": ""
+        },
+        {
+          "label": "OPERATIONS",
+          "name": "Open IT Tickets (Sys-admin)",
+          "prefix": ""
+        },
+        {
+          "label": "PROF. SERV.",
+          "name": "Financial Milestones",
+          "prefix": ""
+        },
+        {
+          "label": "PROF. SERV.",
+          "name": "OOO Requests",
+          "prefix": ""
+        },
+        {
+          "label": "PROF. SERV.",
+          "name": "Work Orders",
+          "prefix": ""
+        }
+      ]
+    }
+  ]
+}

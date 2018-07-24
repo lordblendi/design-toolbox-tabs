@@ -1,0 +1,44 @@
+<div class="toolbox-table">
+  <div class="toolbox-table__row">
+    <ul class="toolbox-table__rowInner">
+      <li class="toolbox-table__cell">
+        <div class= "toolbox-table__cellInner JS_text">
+          <input type="search" class="toolbox-table__input toolbox-table__input--fluid JS_appNav__filterInput" placeholder="filter through overview items">
+        </div>
+      </li>
+    </ul>
+  </div>
+  {% include blocks/popup/ms-row-use-global-search.html%}
+</div>{% comment %} /.toolbox-table {% endcomment %}
+
+<div class="toolbox-table JS_appNavBox">
+  {% for group in site.data.app-nav-tab2.groups %}
+    <div class="toolbox-table__row">
+      <ul class="toolbox-table__rowInner toolbox-table__rowInner--item">
+        <li class="toolbox-table__cell toolbox-table__cell--action JS_toggle">
+          <div class="toolbox-table__cellInner">
+            <button class="toolbox-table__action">{{group.name}}{% if group.loadmore == "true"%}<sup>{{group.counter}}</sup>{% endif %}</button>
+          </div>
+        </li>
+      </ul>
+      <div class="toolbox-table JS_toolbox-table--children">
+        {% for item in group.items %}
+          <div class="toolbox-table__row">
+            <ul class="toolbox-table__rowInner toolbox-table__rowInner--item JS_filterableCell">
+              <li class="toolbox-table__cell toolbox-table__cell--permalink" tabindex="0">
+                <div class="toolbox-table__cellInner JS_text">
+                  {% assign toolboxSelectorData = "," | append: item.prefix | append: "," | append: item.label | append: "," | append: item.name %}
+                  {% include components/toolbox-selector.html toolboxSelectorData=toolboxSelectorData expanded="true"  singleselect="true" readonly="true" selectedIndexes="1" %}
+                </div>
+              </li>
+            </ul>
+          </div>
+        {% endfor %}
+
+        {% if group.loadmore == "true"%}
+          {% include blocks/popup/ms-row-load-more.html %}
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>{% comment %} /.toolbox-table {% endcomment %}
